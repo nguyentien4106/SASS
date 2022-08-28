@@ -1,0 +1,25 @@
+@import 'mixins';
+.explore{
+    @include imgBackground('../images/img/bg2.png');
+    &>div{
+        padding: 250px 0 0 250px;
+        color: white;
+        & h1{
+            font-size: 3rem;
+        }
+    }
+    &__line{
+        @include line(150px);
+        margin-left: 200px;
+    }
+    &__content{
+        margin-top: 100px;
+        width: 450px;
+        text-align: center;
+    }
+    & button{
+        margin-top: 50px;
+        @include btn;
+        margin-left: 170px;
+    }
+}

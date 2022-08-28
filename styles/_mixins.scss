@@ -1,0 +1,26 @@
+@mixin btn {
+    margin: 20px;
+    padding: 8px 15px;
+    background: $mainColor;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        color: $mainColor;
+        background-color: white;
+    }
+} 
+@mixin imgBackground($url) {
+    background-image: url($url);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@mixin line($width){
+    width: $width;
+    height: 4px;
+    background: $mainColor;
+    margin: 10px auto;
+}
